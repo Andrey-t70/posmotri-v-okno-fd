@@ -55,9 +55,8 @@ ol {
 .content {
   display: flex; /* Включаем flex-контейнер */
   flex-direction: row; /* Располагаем элементы в строку */
-  align-items: end; /* Прижимаем элементы к низу */
+  align-items: flex-end; /* Прижимаем элементы к низу */
   width: 1140px;
-  height: 534px;
 }
 
 .result {
@@ -109,6 +108,16 @@ video {
   cursor: pointer;
 }
 
+.visually-hidden {
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
 .search-form__textfield {
   font-family: "Fira Sans Condensed";
   font-weight: 400;
@@ -139,16 +148,6 @@ video {
 .search-form__checkbox-list {
   display: flex;
   gap: 15px;
-}
-
-.visually-hidden {
-  position: absolute;
-  inline-size: 1px;
-  block-size: 1px;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  white-space: nowrap;
 }
 
 .search-form__pseudo-checkbox {
@@ -294,6 +293,6 @@ button:active {
 }
 
 .more-button {
-  width: 390px;
+  width: 100%;
   height: 34px;
 }

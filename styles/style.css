@@ -10,7 +10,7 @@ html {
 
 .page {
   display: flex;
-  justify-content: center; 
+  justify-content: center;
   align-items: center;
   inline-size: 1200px;
   block-size: 100%;
@@ -61,10 +61,6 @@ ol {
   gap: 30px;
 }
 
-.result {
- 
-}
-
 .result__video-container {
   position: relative;
   width: 711px;
@@ -93,7 +89,7 @@ video {
 }
 
 .search-form__fieldset-title {
-  font-family: "Fira Sans Condensed",sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   font-weight: 400;
   color: #fff;
@@ -275,6 +271,7 @@ button:active {
 
 .content__card-link_current:active {
   background-color: rgba(84 80 80);
+  text-decoration: none;
 }
 
 .content__video-card {
@@ -318,10 +315,7 @@ button:active {
   object-position: center;
 }
 
-.more-button-template {
-  
-}
 .more-button {
- width: 390px;
- padding: 6px 0;
+  width: 390px;
+  padding: 6px 0;
 }

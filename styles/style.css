@@ -58,15 +58,22 @@ ol {
   flex-direction: row; /* Располагаем элементы в строку */
   align-items: flex-end; /* Прижимаем элементы к низу */
   width: 1140px;
+  height: 534px;
   gap: 30px;
+}
+
+.result {
+  display: flex;
+  flex-direction: column;
+  width: 711px;
+  height: 456px;
+  gap: 16px;
 }
 
 .result__video-container {
   position: relative;
   width: 711px;
   height: 386px;
-  position: relative; /* Для корректной работы object-fit */
-  margin-bottom: 16px;
 }
 
 video {
@@ -129,9 +136,7 @@ video {
   cursor: pointer;
 }
 
-.search-form__textfield:focus {
-  outline: none;
-}
+
 
 .search-form__label:has(:focus-visible) {
   outline: 1px solid #fff;
@@ -144,6 +149,10 @@ video {
 
 .search-form__textfield::placeholder {
   color: rgb(255 255 255 / 0.7);
+}
+
+.search-form__textfield:focus {
+  outline: none;
 }
 
 .search-form__checkbox-list {
@@ -212,7 +221,7 @@ button:active {
   flex-direction: column;
   width: 100%;
   height: 100%;
-  gap: 26px;
+  gap: 20px;
 }
 
 .title {
@@ -269,9 +278,8 @@ button:active {
   outline: 1px solid #fff;
 }
 
-.content__card-link_current:active {
+.content__card-link_current {
   background-color: rgba(84 80 80);
-  text-decoration: none;
 }
 
 .content__video-card {
